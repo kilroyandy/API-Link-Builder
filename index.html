@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>API Look Up</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrap">
+      <p>
+        Use this tool to find API data for your subdomain and client name of
+        choice.
+      </p>
+      <p>To help make these responses easier to read,</p>
+      <p>
+        install
+        <a
+          class="linkhighlight"
+          target="_blank"
+          href="https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh"
+          >JSON Viewer</a
+        >
+        in your Chrome Browser.
+      </p>
+      <p>
+        The returned data is all public, "Available to Web" , information from
+        Spektrix.
+      </p>
+      <br />
+      <h2>Subdomain</h2>
+      <input
+        type="text"
+        class="field"
+        value="system.spektrix.com"
+        placeholder="Subdomain"
+        name="domain"
+        id="domain"
+      />
+      <br />
+      <br />
+      <h2>Client Name</h2>
+      <input
+        type="text"
+        class="field"
+        placeholder="Spektrix Clientname"
+        name="clientname"
+        id="clientname"
+      />
+      <br />
+      <br />
+      <br />
+      <div class="button_cont">
+        <input type="submit" value="Generate" id="generate" class="button" />
+      </div>
+      <br />
+
+      <h2>Quick Find</h2>
+      <div class="events"></div>
+      <br />
+      <h2>Find Event Instances</h2>
+      <input
+        type="text"
+        class="field"
+        placeholder="I need an APIv3 Event ID"
+        name="eventId"
+        id="eventId"
+      />
+      <br />
+      <br />
+      <br />
+      <div class="button_cont">
+        <input
+          type="submit"
+          value="Generate"
+          id="generateInstances"
+          class="button"
+        />
+      </div>
+      <br />
+      <br />
+      <div class="instances"></div>
+      <br />
+      <h2>Find Instance Information</h2>
+      <input
+        type="text"
+        class="field"
+        placeholder="I need an APIv3 Instance ID"
+        name="instanceId"
+        id="instanceId"
+      />
+      <br />
+      <br />
+      <br />
+      <div class="button_cont">
+        <input
+          type="submit"
+          value="Generate"
+          id="generateInstanceInformation"
+          class="button"
+        />
+      </div>
+      <br />
+      <br />
+      <div class="instanceinfo"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
